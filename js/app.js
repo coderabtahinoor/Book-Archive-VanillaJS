@@ -66,7 +66,7 @@ const showBooks = (booksData) => {
         //handle image not found
         let book_image;
         if (book.cover_i === undefined) {
-            book_image = "https://images-ext-1.discordapp.net/external/0HA2jhEDl46kUOozPYZxqltQ3vdBRvkSB2xr77PzbyM/%3Fq%3Dtbn%3AANd9GcQVIiNXO1UGEUca6N_ZRXpaxUXzAUqs_1KTCpXauiZOpAO6jrQ0XwivrGx3F9UJBNCzn8E%26usqp%3DCAU/https/encrypted-tbn0.gstatic.com/images";
+            book_image = "https://roofequipmentllc.com/wp-content/uploads/2019/01/noimage.png";
         } else {
             book_image = `https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`
         }
