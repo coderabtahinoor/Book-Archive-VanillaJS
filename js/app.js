@@ -42,7 +42,7 @@ const searchHandler = (event) => {
         spinner.classList.add("d-flex");
 
         //get the data
-        fetchData(`http://openlibrary.org/search.json?q=${searchText}`)
+        fetchData(`https://openlibrary.org/search.json?q=${searchText}`)
             .then(data => showBooks(data))
     }
 
@@ -70,7 +70,6 @@ const showBooks = (booksData) => {
         } else {
             book_image = `https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`
         }
-
         booksContainer.innerHTML += `
         <div>
         <div class="card" style="width: 18rem;">
